@@ -18,12 +18,11 @@ export const projects = [
         tech: "Java",
         link: "#",
     },
-
     {
-        title: "Data Visualization Dashboard",
-        description: "An interactive dashboard using D3.js and Next.js",
-        tech: "NodeJs",
-        link: "#",
+        title: "Personal Blog",
+        description: "My personal blog where I share my thoughts on programming and technology.",
+        tech: "NextJs",
+        link: "https://blog.kaidev99.com",
     },
     {
         title: "AI Chatbot",
