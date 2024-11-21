@@ -30,7 +30,6 @@ const jobs = [
         link: "https://itsol.vn/",
         images: [
             "/itsol1.png",
-            // "/devvault.png",
         ],
     },
     {
