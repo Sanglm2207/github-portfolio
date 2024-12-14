@@ -9,8 +9,8 @@ export const projects = [
     {
         title: "Task Management Platform",
         description: "Taskcover is a unique, AI-enhanced project and task management to streamline workflows. Save time and optimize effectively with Taskcover one-stop shop.",
-        tech: "NextJs",
-        link: "https://www.taskcover.com/",
+        tech: "NodeJs",
+        link: "https://www.taskcover.com/en",
     },
     {
         title: "E-commerce Platform",
@@ -25,10 +25,10 @@ export const projects = [
         link: "https://blog.kaidev99.com",
     },
     {
-        title: "AI Chatbot",
-        description: "A machine learning powered chatbot using Java and TensorFlow",
-        tech: "Java",
-        link: "#",
+        title: "Crypto Trace Real-Time",
+        description: "A real-time cryptocurrency tracker with Nextjs 15 and Material UI",
+        tech: "NextJs",
+        link: "https://trace-code.kaidev99.com",
     },
 ]
 
@@ -52,6 +52,7 @@ export const Projects = () => {
                             <div className="flex flex-col h-full">
                                 <Link
                                     href={p.link}
+                                    target="_blank"
                                     className="font-semibold text-primary hover:underline"
                                 >
                                     {p.title}
