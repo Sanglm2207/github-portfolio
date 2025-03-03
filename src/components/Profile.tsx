@@ -62,7 +62,7 @@ export const Profile = () => {
                         {/* or link to schedule a meeting using Calendly or Cal*/}
                         <Link
                             target="_blank"
-                            href="https://static.topcv.vn/topcv-cv-uploads/978e787425088f70e7af85581b3f70e4.pdf#toolbar=0&navpanes=0&scrollbar=0"
+                            href="https://static.topcv.vn/topcv-cv-uploads/c7f5b234a1d6993128619f8c53a87a11.pdf"
                             className="font-semibold"
                         >
                             RESUME WORK
