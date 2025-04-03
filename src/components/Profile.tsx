@@ -4,7 +4,6 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 
-import { Button } from "@/components/ui/button";
 import {
     Card,
     CardContent
@@ -58,16 +57,6 @@ export const Profile = () => {
                     <p className="mt-2 text-start text-sm text-muted-foreground">
                         I am a software developer with a passion for building products that solve real-world problems.
                     </p>
-                    {/* <Button className="mt-4 w-full" asChild>
-
-                        <Link
-                            target="_blank"
-                            href="https://static.topcv.vn/topcv-cv-uploads/c7f5b234a1d6993128619f8c53a87a11.pdf"
-                            className="font-semibold"
-                        >
-                            RESUME WORK
-                        </Link>
-                    </Button> */}
                     <ViewResume
                         role="SangLM's Software Developer"
                     />
