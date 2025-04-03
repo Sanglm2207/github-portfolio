@@ -9,6 +9,7 @@ import {
     Card,
     CardContent
 } from "@/components/ui/card";
+import { ViewResume } from "./ViewResume";
 const socials = [
     {
         name: "Github",
@@ -57,9 +58,8 @@ export const Profile = () => {
                     <p className="mt-2 text-start text-sm text-muted-foreground">
                         I am a software developer with a passion for building products that solve real-world problems.
                     </p>
-                    <Button className="mt-4 w-full" asChild>
-                        {/* TODO: Add resume link */}
-                        {/* or link to schedule a meeting using Calendly or Cal*/}
+                    {/* <Button className="mt-4 w-full" asChild>
+
                         <Link
                             target="_blank"
                             href="https://static.topcv.vn/topcv-cv-uploads/c7f5b234a1d6993128619f8c53a87a11.pdf"
@@ -67,7 +67,10 @@ export const Profile = () => {
                         >
                             RESUME WORK
                         </Link>
-                    </Button>
+                    </Button> */}
+                    <ViewResume
+                        role="SangLM's Software Developer"
+                    />
                     <div className="mt-4 flex flex-col space-y-2 border-t border-border pt-4 w-full">
                         {socials.map((s, i) => {
                             const parts = s.link.split('/')

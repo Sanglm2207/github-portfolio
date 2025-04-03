@@ -18,6 +18,7 @@ export default function Home() {
             <Projects />
             {/* Experience Section */}
             <Experience />
+            {/* Certificate section */}
           </main>
         </div>
       </div>
