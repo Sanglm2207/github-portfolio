@@ -21,7 +21,7 @@ export const projects = [
     {
         title: "Personal Blog",
         description: "My personal blog where I share my thoughts on programming and technology.",
-        techs: ["NextJs", "Oracle"],
+        techs: ["NextJs", "Mongodb"],
         link: "https://blog.kaidev99.com",
     },
     {
