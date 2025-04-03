@@ -8,6 +8,19 @@ import { JobImages } from "@/components/JobImages";
 
 const jobs = [
     {
+        role: "Freelance Software Developer",
+        company: "Freelance",
+        logo: "/freelancer-1.svg",
+        duration: "2022 - Present",
+        description:
+            "As a freelance software developer, I have worked on various projects across different industries. My role involved full-stack development, client collaboration, and delivering tailored software solutions for clients. I specialized in developing web applications and optimizing performance for better user experiences.",
+        link: "https://kaidev99.com/",
+        images: [
+            "/freelance1.png",
+            "/freelance2.png"
+        ],
+    },
+    {
         role: "Software Developer", // TODO: Replace with actual role
         company: "FUNiX Online Education., JSC", // TODO: Replace with actual company name
         logo: "/funix.png", // TODO: Replace with actual logo
@@ -72,16 +85,16 @@ export const Experience = () => {
                                     </div>
                                 </div>
                                 <p className="text-xs text-muted-foreground mt-2 flex items-center">
-                                    <CalendarDays className="size-3 mr-2"/>
+                                    <CalendarDays className="size-3 mr-2" />
                                     {j.duration}
                                 </p>
                                 <p className="text-sm mt-2">{j.description}</p>
                                 {/* Job Images */}
-                                <JobImages 
-                                    role={j.role} 
+                                <JobImages
+                                    role={j.role}
                                     link={j.link}
-                                    images={j.images} 
-                                    duration={j.duration} 
+                                    images={j.images}
+                                    duration={j.duration}
                                 />
                             </li>
                         ))}
