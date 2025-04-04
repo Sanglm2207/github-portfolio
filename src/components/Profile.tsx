@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import * as Tooltip from "@radix-ui/react-tooltip";
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaCheckCircle, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 
 import {
@@ -48,7 +49,29 @@ export const Profile = () => {
                             className="rounded-full size-12 md:w-full h-auto object-cover border-2"
                         />
                         <div className="flex flex-col items-start justify-center">
-                            <h1 className="font-bold md:mt-4 text-xl md:text-2xl">Lại Minh Sáng</h1>
+                            <h1 className="font-bold md:mt-4 text-xl md:text-2xl flex items-center gap-2">
+                                Lại Minh Sáng
+                                <Tooltip.Provider>
+                                    <Tooltip.Root>
+                                        <Tooltip.Trigger asChild>
+                                            <span>
+                                                <FaCheckCircle className="text-blue-500 size-5 cursor-pointer" />
+                                            </span>
+                                        </Tooltip.Trigger>
+                                        <Tooltip.Portal>
+                                            <Tooltip.Content
+                                                className="bg-gray-900 text-white text-xs px-2 py-1 rounded shadow-lg"
+                                                side="top"
+                                                align="center"
+                                            >
+                                                Accounts with a verified badge have been authenticated and can be Verified subscribers or notable persons or brands.
+                                                <Tooltip.Arrow className="fill-gray-900" />
+                                            </Tooltip.Content>
+                                        </Tooltip.Portal>
+                                    </Tooltip.Root>
+                                </Tooltip.Provider>
+                            </h1>
+
                             <p className="text-sm md:text-base text-muted-foreground">
                                 Software Developer
                             </p>
