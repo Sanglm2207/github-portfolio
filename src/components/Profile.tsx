@@ -60,7 +60,7 @@ export const Profile = () => {
                     <ViewResume
                         role="SangLM's Software Developer"
                     />
-                    <div className="mt-4 flex flex-col space-y-2 border-t border-border pt-4 w-full">
+                    {/* <div className="mt-4 flex flex-col space-y-2 border-t border-border pt-4 w-full">
                         {socials.map((s, i) => {
                             const parts = s.link.split('/')
                             const username = parts[parts.length - 1]
@@ -79,7 +79,21 @@ export const Profile = () => {
                                 </Link>
                             )
                         })}
+                    </div> */}
+                    <div className="mt-4 flex flex-row items-center justify-center gap-4 border-t border-border pt-4 w-full">
+                        {socials.map((s, i) => (
+                            <Link
+                                key={i}
+                                href={s.link}
+                                target="_blank"
+                                aria-label={`${s.name} Logo`}
+                                className="cursor-pointer text-muted-foreground hover:text-primary transition-colors duration-200 ease-linear"
+                            >
+                                {s.icon}
+                            </Link>
+                        ))}
                     </div>
+
                 </div>
             </CardContent>
         </Card>
