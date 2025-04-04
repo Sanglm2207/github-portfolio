@@ -109,9 +109,10 @@ export const Profile = () => {
                                 key={i}
                                 // href={s.link}
                                 href={"#"}
-                                target="_blank"
+                                // target="_blank"
                                 aria-label={`${s.name} Logo`}
                                 className="cursor-pointer text-muted-foreground hover:text-primary transition-colors duration-200 ease-linear"
+                                title="Social media information is being updated..."
                             >
                                 {s.icon}
                             </Link>
