@@ -84,7 +84,8 @@ export const Profile = () => {
                         {socials.map((s, i) => (
                             <Link
                                 key={i}
-                                href={s.link}
+                                // href={s.link}
+                                href={"#"}
                                 target="_blank"
                                 aria-label={`${s.name} Logo`}
                                 className="cursor-pointer text-muted-foreground hover:text-primary transition-colors duration-200 ease-linear"
