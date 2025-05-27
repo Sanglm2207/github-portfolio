@@ -6,7 +6,8 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 
-const skills = ["TypeScript", "Java", "Python", "SQL", "HTML", "CSS", "TailwindCSS", "NextJS", "NodeJS", "ExpressJS", "MongoDB", "PostgreSQL","Oracle", "Git", "Docker", "Kubernetes", "Linux", "Windows", "MacOS"]
+const skills = [
+    "TypeScript", "Java", "Python", "SQL", "React", "React Native", "Expo", "Angular", "Material UI", "NextJS", "NodeJS", "ExpressJS", "MongoDB", "PostgreSQL", "Oracle", "Git", "Docker", "Kubernetes", "Linux", "Windows", "MacOS"]
 
 export const Skills = () => {
     return (
