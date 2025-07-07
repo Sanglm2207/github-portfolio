@@ -81,7 +81,7 @@ export const Profile = () => {
                         I am a software developer with a passion for building products that solve real-world problems.
                     </p>
                     <ViewResume
-                        role="SangLM's Software Developer"
+                        role="SangLM - Fullstack-Developer"
                     />
                     {/* <div className="mt-4 flex flex-col space-y-2 border-t border-border pt-4 w-full">
                         {socials.map((s, i) => {
