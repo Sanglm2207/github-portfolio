@@ -24,7 +24,7 @@ const jobs = [
         role: "Software Developer", // TODO: Replace with actual role
         company: "FUNiX Online Education., JSC", // TODO: Replace with actual company name
         logo: "/funix.png", // TODO: Replace with actual logo
-        duration: "2022 - Present",
+        duration: "2022 - 2024",
         description:
             "Lead developer for multiple high-impact projects, mentoring developers and students, implementing best practices.",
         link: "https://funix.edu.vn/",

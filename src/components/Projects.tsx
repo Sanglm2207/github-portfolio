@@ -9,13 +9,13 @@ export const projects = [
     {
         title: "Task Management Platform",
         description: "Taskcover is a unique, AI-enhanced project and task management to streamline workflows.",
-        techs: ["NodeJs", "React", "Redis"],
+        techs: ["NodeJs", "React"],
         link: "https://www.taskcover.com/en",
     },
     {
         title: "E-commerce Platform",
         description: "A full-stack e-commerce solution with React, Java, MySQL, and Kafka.",
-        techs: ["Java", "Spring Boot", "MySQL", "Kafka", "Redis", "Oracle"],
+        techs: ["Java", "Spring Boot"],
         link: "#",
     },
     {
@@ -27,19 +27,19 @@ export const projects = [
     {
         title: "Crypto Trace Real-Time",
         description: "A real-time cryptocurrency tracker with Next.js 15, Material UI, and Redis.",
-        techs: ["NextJs", "Material UI", "Redis"],
+        techs: ["NextJs", "Material UI"],
         link: "https://trace-code.kaidev99.com",
     },
     {
         title: "Short Video Streaming Platform",
         description: "A web & mobile application for browsing and interacting with short-form video content (TikTok-style)",
-        techs: ["React Native", "Expo", "NodeJs", "Firebase", "MongoDB", "Redis", "MinIO", "Cloudflare CDN", 'WebSocket'],
+        techs: ["React Native", "Expo"],
         link: "#",
     },
     {
         title: "Enterprise Management System",
         description: "A complete enterprise system built with Angular, Spring Boot, and Oracle.",
-        techs: ["Angular", "Spring Boot", "Oracle"],
+        techs: [ "Spring Boot", "Oracle"],
         link: "#",
     },
 ];

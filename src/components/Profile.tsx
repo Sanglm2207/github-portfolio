@@ -83,7 +83,7 @@ export const Profile = () => {
                     <ViewResume
                         role="SangLM - Fullstack-Developer"
                     />
-                    {/* <div className="mt-4 flex flex-col space-y-2 border-t border-border pt-4 w-full">
+                    <div className="mt-4 flex flex-row items-center justify-center gap-4 border-t border-border pt-4 w-full">
                         {socials.map((s, i) => {
                             const parts = s.link.split('/')
                             const username = parts[parts.length - 1]
@@ -93,32 +93,13 @@ export const Profile = () => {
                                     href={s.link}
                                     target="_blank"
                                     aria-label={`${s.name} Logo`}
-                                    className="cursor-pointer flex items-center gap-2 group"
+                                    className="cursor-pointer text-muted-foreground hover:text-primary transition-colors duration-200 ease-linear"
                                 >
                                     {s.icon}
-                                    <p className="text-sm text-muted-foreground group-hover:text-primary transition-color duration-200 ease-linear">
-                                        /{username}
-                                    </p>
                                 </Link>
                             )
                         })}
-                    </div> */}
-                    <div className="mt-4 flex flex-row items-center justify-center gap-4 border-t border-border pt-4 w-full">
-                        {socials.map((s, i) => (
-                            <Link
-                                key={i}
-                                href={s.link}
-                                // href={"#"}
-                                target="_blank"
-                                aria-label={`${s.name} Logo`}
-                                className="cursor-pointer text-muted-foreground hover:text-primary transition-colors duration-200 ease-linear"
-                                title="Social media information is being updated..."
-                            >
-                                {s.icon}
-                            </Link>
-                        ))}
                     </div>
-
                 </div>
             </CardContent>
         </Card>
