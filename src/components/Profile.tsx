@@ -86,7 +86,6 @@ export const Profile = () => {
                     <div className="mt-4 flex flex-row items-center justify-center gap-4 border-t border-border pt-4 w-full">
                         {socials.map((s, i) => {
                             const parts = s.link.split('/')
-                            const username = parts[parts.length - 1]
                             return (
                                 <Link
                                     key={i}
