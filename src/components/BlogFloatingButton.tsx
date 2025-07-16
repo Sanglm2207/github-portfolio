@@ -1,41 +1,33 @@
 "use client";
 
-import { FaFacebookMessenger } from "react-icons/fa";
+import { BookOpen } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
-export const MessengerButton = () => {
+export default function BlogFloatingButton() {
   const [hovered, setHovered] = useState(false);
-
-  const openMessenger = () => {
-    window.open("https://m.me/kaidev99", "_blank");
-  };
 
   return (
     <div
-      className="fixed bottom-6 right-6 z-[9999] flex flex-col items-center gap-2"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      className="fixed bottom-[90px] right-6 z-[9998] flex flex-col items-center gap-2"
     >
       {/* Tooltip */}
       {hovered && (
         <div className="bg-black text-white text-sm px-3 py-1 rounded shadow-md animate-fade-in">
-          Nhắn tin với tôi
+          Đọc bài viết tại Blog
         </div>
       )}
 
-      {/* Messenger Button */}
-      <button
-        onClick={openMessenger}
-        className="w-[60px] h-[60px] rounded-full flex items-center justify-center shadow-lg cursor-pointer animate-shake transition-colors duration-300"
-        style={{
-          background: hovered ? "#0073E0" : "#0084FF",
-          color: "white",
-        }}
-      >
-        <FaFacebookMessenger size={28} />
-      </button>
+      {/* Floating Blog Button */}
+      <Link href="https://blog.kaidev99.com" target="_blank">
+        <div className="w-[60px] h-[60px] rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 shadow-lg flex items-center justify-center cursor-pointer animate-shake">
+          <BookOpen color="#fff" size={28} />
+        </div>
+      </Link>
 
-      {/* Keyframe CSS */}
+      {/* Animations */}
       <style jsx>{`
         @keyframes shake {
           0% { transform: rotate(0deg); }
@@ -64,4 +56,4 @@ export const MessengerButton = () => {
       `}</style>
     </div>
   );
-};
+}
