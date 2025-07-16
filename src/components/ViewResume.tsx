@@ -35,7 +35,7 @@ export const ViewResume = ({ role }: ViewResumeProps) => {
                 <DialogContent className="max-w-4xl">
                     <DialogHeader>
                         <DialogTitle>
-                            Curriculum Vitae: {role}
+                            Resume: {role}
                         </DialogTitle>
                     </DialogHeader>
                     <div className="mt-4 flex flex-col items-center w-full">
