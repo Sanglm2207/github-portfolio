@@ -21,9 +21,9 @@ const jobs = [
         ],
     },
     {
-        role: "Software Developer", // TODO: Replace with actual role
-        company: "FUNiX Online Education., JSC", // TODO: Replace with actual company name
-        logo: "/funix.png", // TODO: Replace with actual logo
+        role: "Software Developer",
+        company: "FUNiX Online Education., JSC",
+        logo: "/funix.png",
         duration: "2022 - 2024",
         description:
             "Lead developer for multiple high-impact projects, mentoring developers and students, implementing best practices.",
@@ -34,9 +34,9 @@ const jobs = [
         ],
     },
     {
-        role: "Junior Backend Developer", // TODO: Replace with actual role
-        company: "ITSOL Technology Resources & Solutions., JSC", // TODO: Replace with actual company name
-        logo: "/itsol.png", // TODO: Replace with actual logo
+        role: "Junior Backend Developer",
+        company: "ITSOL Technology Resources & Solutions., JSC",
+        logo: "/itsol.png",
         duration: "2020 - 2022",
         description:
             "As a Java Developer at ITSOL, I developed Data ETL, REST, SOAP services, improved UI/UX, built frameworks like ZK and Spring, and provided onsite support at Viettel Cyber Security.",
@@ -46,9 +46,9 @@ const jobs = [
         ],
     },
     {
-        role: "Fresher Java Developer", // TODO: Replace with actual role
-        company: "Thuan Thanh Technology Solutions Co., Ltd", // TODO: Replace with actual company name
-        logo: "/thuan-thanh-tech-logo.png", // TODO: Replace with actual logo
+        role: "Fresher Java Developer",
+        company: "Thuan Thanh Technology Solutions Co., Ltd",
+        logo: "/thuan-thanh-tech-logo.png",
         duration: "2019 - 2020",
         description:
             "Assisted in the development of web applications, gained experience in agile methodologies and version control.",

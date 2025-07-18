@@ -9,8 +9,12 @@ import {
 } from "@/components/ui/dialog";
 import { ExternalLink, Calendar } from "lucide-react";
 import Link from "next/link";
-import { techColors } from "./Projects";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import { useState } from "react";
+import { techColors } from "@/data/techColors";
 
 interface ViewProjectProps {
     title: string;
@@ -20,6 +24,7 @@ interface ViewProjectProps {
     endDate?: string;
     productLink?: string;
     techs?: string[];
+    images?: string[];
 }
 
 export const ViewProject = ({
@@ -30,14 +35,18 @@ export const ViewProject = ({
     endDate,
     productLink,
     techs = [],
+    images = []
 }: ViewProjectProps) => {
+    const [lightboxOpen, setLightboxOpen] = useState(false);
+    const [selectedIndex, setSelectedIndex] = useState(0);
+
     return (
         <Dialog>
             <DialogTrigger className="flex gap-2 text-sm text-primary hover:underline">
                 View Project
                 <ExternalLink className="inline-block size-3" />
             </DialogTrigger>
-            <DialogContent className="max-w-4xl">
+            <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
                 <DialogHeader>
                     <DialogTitle className="text-lg font-bold">
                         Project: {title}
@@ -70,6 +79,29 @@ export const ViewProject = ({
                                 className="prose prose-sm max-w-none text-muted-foreground"
                                 dangerouslySetInnerHTML={{ __html: result }}
                             />
+                        </div>
+                    )}
+
+                     {/* Images */}
+                    {images.length > 0 && (
+                        <div>
+                            <h4 className="text-md font-semibold mb-1 text-foreground">Project Screenshots</h4>
+                            <div className="flex flex-wrap gap-3">
+                                {images.map((img, i) => (
+                                    <Image
+                                        key={i}
+                                        src={`/images/projects/${img}`}
+                                        alt={`Project screenshot ${i + 1}`}
+                                        width={200}
+                                        height={120}
+                                        className="rounded cursor-pointer object-cover"
+                                        onClick={() => {
+                                            setSelectedIndex(i);
+                                            setLightboxOpen(true);
+                                        }}
+                                    />
+                                ))}
+                            </div>
                         </div>
                     )}
 
@@ -108,6 +140,18 @@ export const ViewProject = ({
                     )}
                 </div>
             </DialogContent>
+
+            {/* ✅ Lightbox */}
+            {lightboxOpen && (
+                <Lightbox
+                    open={lightboxOpen}
+                    close={() => setLightboxOpen(false)}
+                    index={selectedIndex}
+                    slides={images.map((img) => ({
+                        src: `/images/projects/${img}`,
+                    }))}
+                />
+            )}
         </Dialog>
     );
 };
