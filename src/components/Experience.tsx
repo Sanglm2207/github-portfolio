@@ -97,7 +97,7 @@ export const Experience = () => {
                                     link={j.link}
                                     images={j.images}
                                     duration={j.duration}
-                                    isFirstFreelanceJob={i === 0}
+                                    isFirstFreelanceJob={i === 0} 
                                 />
                             </li>
                         ))}
