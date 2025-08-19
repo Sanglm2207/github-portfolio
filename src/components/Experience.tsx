@@ -16,7 +16,9 @@ const jobs = [
             "As a freelance software developer, I have worked on various projects across different industries. My role involved full-stack development, client collaboration, and delivering tailored software solutions for clients. I specialized in developing web applications and optimizing performance for better user experiences.",
         link: "https://kaidev99.com/",
         images: [
+            "/kaidev99.jpg",
             "/freelance1.png",
+            "/freelance3.png",
             "/freelance2.png"
         ],
     },
@@ -95,6 +97,7 @@ export const Experience = () => {
                                     link={j.link}
                                     images={j.images}
                                     duration={j.duration}
+                                    isFirstFreelanceJob={i === 0}
                                 />
                             </li>
                         ))}
@@ -103,4 +106,5 @@ export const Experience = () => {
             </Card>
         </>
     )
-}
+};
+

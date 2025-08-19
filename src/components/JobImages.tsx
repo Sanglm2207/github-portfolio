@@ -21,13 +21,15 @@ interface JobImagesProps {
     link: string;
     images: string[];
     duration: string;
+    isFirstFreelanceJob?: boolean;
 }
 
 export const JobImages = ({
     role,
     link,
     images,
-    duration
+    duration,
+    isFirstFreelanceJob
 }: JobImagesProps) => {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -42,7 +44,9 @@ export const JobImages = ({
                             height={100}
                             alt={`Project Image for ${role}`}
                             onClick={() => setSelectedImage(img)}
-                            className="cursor-pointer rounded-md border h-full w-auto shadow-md object-cover"
+                            // className="cursor-pointer rounded-md border h-full w-auto shadow-md object-cover"
+                            className={`cursor-pointer rounded-md border h-full w-auto shadow-md object-cover ${idx === 0 && isFirstFreelanceJob ? 'self-center' : ''}`} // Add self-center to the first image
+
                         />
                     </DialogTrigger>
                     <DialogContent>
