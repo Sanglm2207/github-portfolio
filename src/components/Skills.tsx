@@ -7,7 +7,11 @@ import {
 } from "@/components/ui/card";
 
 const skills = [
-    "TypeScript", "Java", "Python", "SQL", "React", "React Native", "Expo", "Angular", "Material UI", "NextJS", "NodeJS", "ExpressJS", "MongoDB", "PostgreSQL", "Oracle", "Git", "Docker", "Kubernetes", "Linux", "Windows", "MacOS"]
+    "TypeScript", "Java", "Python", "SQL", "React", "React Native", "Expo", 
+    "Angular", "Material UI", "NextJS", 'Tailwind CSS', "Bootstrap", "Sass", "CSS", "HTML",
+    "VueJS","NodeJS", "ExpressJS", "MongoDB", 
+    "PostgreSQL", "Oracle", "Git", "Docker", "Kubernetes", "Linux", "Windows", "MacOS"
+]
 
 export const Skills = () => {
     return (

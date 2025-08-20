@@ -95,7 +95,7 @@ export const Projects = () => {
                                                 key={tech}
                                                 className={cn(
                                                     "px-2 py-1 rounded-full text-xs font-medium",
-                                                    techColors[tech] || "bg-gray-500 text-white"
+                                                    techColors[tech] || "bg-gray-400 text-white"
                                                 )}
                                             >
                                                 {tech}
